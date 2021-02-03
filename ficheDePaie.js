@@ -1,4 +1,14 @@
-//TODO Compléter   
+	//Permet de gérer les champs de saisie du formulaire
+	function ElementFormulaire() {
+      this.InputCheckbox = function (idInput) {
+        let input = document.getElementById(idInput);
+        return input.checked;
+      };
+      this.InputInt = function (idInput) {
+        let input = document.getElementById(idInput);
+        return parseInt(input.value);
+      };
+    }    
    
      
     function calculerSalaireNet() {
